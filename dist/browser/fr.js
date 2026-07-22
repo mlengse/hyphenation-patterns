@@ -28,6 +28,10 @@ module.exports = {
 		16 : "_chè2vre3feuille"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

@@ -7,7 +7,7 @@ var module = {
 // Hyphenation patterns for Modern Polytonic Greek.
 // Created by Dimitrios Filippou with some ideas borrowed from 
 // Yannis Haralambous, Kostis Dryllerakis and Claudio Beccari.
-﻿// From http://tug.org/svn/texhyphen/branches/ptex/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-el-polyton.tex
+// From http://tug.org/svn/texhyphen/branches/ptex/hyph-utf8/tex/generic/hyph-utf8/patterns/tex/hyph-el-polyton.tex
 // Converted by Pablo Rodríguez (hyphenator at pragmata dot tk)
 module.exports = {
 	'id': 'el-polyton',
@@ -29,6 +29,10 @@ module.exports = {
 		13 : "_μπασκε2τ5μ2π_μπαϲκε2τ5μ2π_μπασι5μ2πουζ_μπαϲι5μ2πουζ"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

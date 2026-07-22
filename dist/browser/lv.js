@@ -22,6 +22,10 @@ module.exports = {
 		11 : "d_vi1s2iem_2b3da3mies_2c3da3mies_2č3da3mies_2d3da3mies_2f3da3mies_2g3da3mies_2ģ3da3mies_2h3da3mies_2j3da3mies_2k3da3mies_2ķ3da3mies_2l3da3mies_2ļ3da3mies_2m3da3mies_2n3da3mies_2ņ3da3mies_2p3da3mies_2r3da3mies_2s3da3mies_2š3da3mies_2t3da3mies_2v3da3mies_2z3da3mies_2ž3da3mies_"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

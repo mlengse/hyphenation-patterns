@@ -16,6 +16,10 @@ module.exports = {
 		4 : "2க்12ங்12ச்12ஞ்12ட்12ண்12த்12ன்12ந்12ப்12ம்12ய்12ர்12ற்12ல்12ள்12ழ்12வ்12ஷ்12ஸ்12ஹ்1"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

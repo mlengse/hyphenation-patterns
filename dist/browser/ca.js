@@ -22,6 +22,10 @@ module.exports = {
 		12 : "ru1t2herfordni2etz1sc2he"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

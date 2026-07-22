@@ -27,6 +27,10 @@ module.exports = {
 		15 : "ôs4t3k2ár3s4t4v_po6s4t5s4k4rip5boh3vi4e3o2d3k"
 	}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

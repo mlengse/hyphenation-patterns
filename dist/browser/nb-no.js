@@ -133,6 +133,10 @@ module.exports = {
 	},
 	exceptions: 'atten\u2027de, aust\u2027røn, aviser, betre, bortan\u2027for, bortre, Dansk\u2027øya, der\u2027etter, dess\u2027uak\u2027tet, dit\u2027over, fram\u2027ifrå, før\u2027enn, her\u2027etter, her\u2027etter\u2027dags, hvor\u2027etter, hvor\u2027over, høyt\u2027ærede, gi\u2027vet\u2027vis, lands\u2027øl, lands\u2027ølet, lands\u2027ølets, langt\u2027ifra, ned\u2027imot, noens, Not\u2027odden, Not\u2027oddens, nøye\u2027reg\u2027nen\u2027de, opp\u2027imot, oven\u2027ikjøpet, promp\u2027te, spleen, sel\u2027ves\u2027te, smal\u2027enden, sørpe\u2027is, sørpe\u2027isen, skrov\u2027is, skrov\u2027isen, Steins\u2027land, syd\u2027enden, tvert\u2027om, velan, velet, welt\u2027schmerz'
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {

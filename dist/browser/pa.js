@@ -11,9 +11,13 @@ module.exports = {
 	'leftmin': 2,
 	'rightmin': 2,
 	'patterns': {
-		2 : unescape("ਅ1ਆ1ਇ1ਈ1ਉ1ਊ1ਏ1ਐ1ਔ1ਿ1ਾ1ੀ1ੁ1ੂ1ੇ1ੋ1ੌ1੍2ਃ1%u0A0211ਕ1ਗ1ਖ1ਘ1ਙ1ਚ1ਛ1ਜ1ਝ1ਞ1ਟ1ਠ1ਡ1ਢ1ਣ1ਤ1ਥ1ਦ1ਧ1ਨ1ਪ1ਫ1ਬ1ਭ1ਮ1ਯ1ਰ1ਲ1ਵ1ਸ਼1ਸ1ਹ1ਲ਼")
+		2 : "ਅ1ਆ1ਇ1ਈ1ਉ1ਊ1ਏ1ਐ1ਔ1ਿ1ਾ1ੀ1ੁ1ੂ1ੇ1ੋ1ੌ1੍2ਃ1\u0A0211ਕ1ਗ1ਖ1ਘ1ਙ1ਚ1ਛ1ਜ1ਝ1ਞ1ਟ1ਠ1ਡ1ਢ1ਣ1ਤ1ਥ1ਦ1ਧ1ਨ1ਪ1ਫ1ਬ1ਭ1ਮ1ਯ1ਰ1ਲ1ਵ1ਸ਼1ਸ1ਹ1ਲ਼"
 		}
 };
+if (typeof window['Hypher'] === 'undefined') {
+    throw new Error('Hypher is not loaded. Include hypher.js before this file.');
+}
+
 var h = new window['Hypher'](module.exports);
 
 if (typeof module.exports.id === 'string') {
