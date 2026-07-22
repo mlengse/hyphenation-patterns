@@ -14,6 +14,6 @@
   "main": "./lib/{language}.js",
   "ender": "./lib/ender.js",
   "dependencies": {
-    "hypher": "*"
+    "hypher": "~0.2.5"
   }
 }
