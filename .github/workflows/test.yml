@@ -1,0 +1,19 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  validate-id:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install hypher engine (pinned commit)
+        run: npm install "git+https://github.com/mlengse/hypher.git#941c08e7384cf5c0d72f4febfdfb1e93abbf3644" --no-save
+      - name: Validate Indonesian patterns vs KBBI
+        run: node test/validate-id.js

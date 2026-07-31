@@ -1,0 +1,34 @@
+Hyphenation patterns for Hypher
+===============================
+
+The language pattern files in this repository (patterns/*.js and the
+generated dist/browser/*.js bundles) are conversions of the hyphenation
+pattern files from the TeX `hyph-utf8` package
+(https://www.hyphenation.org/tex). They are copyrighted to their
+respective creators and maintainers and are distributed under the
+license of the originating pattern file. Common licenses are:
+
+  - GPL-2.0 (e.g. the Indonesian pattern, `patterns/id.js`)
+  - LGPL
+  - LPPL
+
+Indonesian pattern (patterns/id.js)
+-----------------------------------
+
+`patterns/id.js` is derived from `hyph-id.tex` v1.3
+(Copyright (C) 1996, 1997 Jörg Knappen and Terry Mart), which is
+licensed under the GNU General Public License version 2.
+
+    https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+
+The file header in `patterns/id.js` carries the license notice of the
+upstream `hyph-id.tex` file. When redistributing `patterns/id.js` or the
+generated `dist/browser/id.js`, the GPL-2.0 obligations of the upstream
+pattern apply.
+
+Hypher engine
+-------------
+
+The Hypher engine (`lib/node_modules/hypher/lib/hypher.js`, installed as
+a dependency of the generated npm packages) is licensed under the
+BSD-3-Clause license. See `BSD.txt` in the Hypher package for details.

@@ -1,8 +1,11 @@
-.PHONY : all clean publish
+.PHONY : all clean publish test
 
 patterns := $(wildcard patterns/*.js)
 
 all: $(patterns)
+
+test:
+	node test/validate-id.js
 
 publish:
 	for language in `ls dist/npm/` ; do (cd dist/npm/$$language; npm publish) ; done
