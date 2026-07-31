@@ -14,6 +14,6 @@
   "main": "./lib/{language}.js",
   "ender": "./lib/ender.js",
   "dependencies": {
-    "hypher": "github:mlengse/hypher#941c08e7384cf5c0d72f4febfdfb1e93abbf3644"
+    "hypher": "github:mlengse/hypher#a336187de24260b11749d1caf6c6903d4f5d9a62"
   }
 }

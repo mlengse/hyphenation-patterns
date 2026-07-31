@@ -37,7 +37,7 @@ make test
 
 ## Indonesian pattern (`id`)
 
-`patterns/id.js` is a Hypher conversion of `hyph-id.tex` v1.3 (1997) by Jörg Knappen & Terry Mart (GPL-2.0), with exceptions validated against KBBI to fix systematic prefix/suffix errors (`ber-`/`per-`/`peng-`/`meng-`, `-an`/`-kan`, `-ia` sequences, etc.). This file is the single source of truth; the `id` pattern bundled inside the pinned `hypher` dependency is not used.
+`patterns/id.js` is generated from KBBI (Kamus Besar Bahasa Indonesia) 2025 data via the orthos pipeline in [`id-hyphenation-patterns`](../id-hyphenation-patterns): 11,443 patterns + 6,916 exception words (leftmin 2, rightmin 2). It is a plain-CJS variant of the `id` pattern bundled inside the pinned `hypher` dependency; both share the same KBBI 2025 single source of truth.
 
 ## License
 
